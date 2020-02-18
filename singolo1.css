@@ -6,7 +6,7 @@
 
 
 h1{
-    font-family: "Lato" sans-serif;
+    font-family: "Lato" , sans-serif;
 }
 
 li {
@@ -14,8 +14,13 @@ li {
     list-style-type: none;
 }
 
+.menu-bar li ::before{
+    content:".";
+}
+
+
 body{
-    font-family: "Lato" sans-serif;
+    font-family: "Lato" , sans-serif;
     max-width: 1020px;
     margin: 0 auto;
 }
@@ -86,7 +91,7 @@ margin-top:42px;
     font-weight: 700;
     text-align: left;
     text-decoration: none;
-    font-family: "Lato" sans-serif; 
+    font-family: "Lato" , sans-serif; 
     
   
  }
@@ -117,15 +122,7 @@ text-align: left;
 
 
 
-.phone-vertical-shadow {
-    
-width :240px;
-height:483px;
-background-image: url(/assets/Shadow1X.png);
-left: 112px;
 
-
-}
 
 
 .key-l{
@@ -150,65 +147,97 @@ justify-content: center;
 
   .key:hover{
     opacity:0.2;
+    background-color:rgba(45,48,58,0.6);
     
   }  
 
   
 .phone {
     order:2;
-    width: calc(100%-180px);
+    width: 850px;
+    height:600px;
     position: relative;
     display: flex;
     flex-direction:row;
+    justify-content: space-between;
     
 }
 
+.phone-vertical {
+background-color: blue;
+position:relative;
+width: 240px;
+height: 483px;
+
+}
+
 .phone-vertical-shadow {
-    background-image: url(assets\Shadow1X.png);
-  
-    position: absolute;
-    z-index:1;
-    left:10px;
-    top:20px;
+    background-image: url(assets/Shadow1X.png);
+    position: relative;
+    width: 240px;
+    height: 483px;
+    
 }
 
 .phone-vertical-base{
-     background-image:url(assets\phone.png) ;
-  
-     position:absolute;
-     z-index:2;
-
+    background-image:url(assets/phone.png) ;
+    position:relative;
+    width: 215px;
+    height: 483px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .phone_vertical-screen{
-    background-image: url(assets\back-graund-h.png);
- 
-    position: absolute;
-    z-index:3;
+    background-image: url(assets/back-graund-h.png);
+    position: relative;
+    background-repeat: no-repeat;
+    top: 82px;
+    left: 11px;
+    background-size: contain;
+    width: 194px;
+    height: 339px;
 
 }
 
-
+.phone-horizontal {
+background-color: blue;
+position:relative;
+width: 483px;
+height: 240px;
+  
+}
 .phone-horizontal-shadow {
-    background-image: url(assets\Shadow2X.png);
-    background-size: contain;
-    position: absolute;
-    z-index:0;
+    background-image: url(assets/Shadow2X.png);
+    
+    position: relative;
+    width: 483px;
+    height: 220px;
+    z-index: 1;
+    
+
 }
 
 .phone-horizontal-base{
-     background-image:url(assets\phone.png) ;
-     background-size: contain;
-     position:absolute;
-     z-index:1;
+     background-image:url(assets/phone.png) ;
+    
+     position:relative;
+     width: 483px;
+     height: 220px;
+     z-index: 2;
 
 }
 
 .phone_horizontal-screen{
-    background-image: url(assets\back-graund-v.png);
-    background-size: contain;
-    position: absolute;
-    z-index:2;
+    background-image: url(assets/back-graund-v.png);
+    position: relative;
+    width: 483px;
+    height: 220px;
+    background-repeat: no-repeat;
+    z-index: 3;
+
+   
 }
 
 .services .wrapper{
