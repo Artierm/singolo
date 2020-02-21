@@ -11,6 +11,8 @@ h1{
 li {
     list-style-type: none;
     font-size:10px;
+    position: relative;
+    top: 3px;
 }
 
 .menu-bar {
@@ -22,7 +24,7 @@ li {
 .menu-bar ::before{
     content:".";
     position: relative;
-    left:-10px;
+    left:-14px;
     top:-3px;
 }
 
@@ -68,7 +70,8 @@ body{
     width: 100%;
     background-image: url(/assets/Bg1X.png);
     flex-direction: row;
-    position:relative;   
+    position:relative;  
+    border-bottom: 6px solid #ea676b; 
 }
 
 
@@ -149,8 +152,9 @@ position: relative;
 
 
   .key:hover{
-    opacity:0.2;
+  
     background-color:rgba(45,48,58,0.6); 
+    background-size: 5px 5px;
 }  
 
   
@@ -167,6 +171,8 @@ position: relative;
 position:relative;
 width: 240px;
 height: 483px;
+top: 50px;
+left: 24px;
 }
 
 .phone-vertical-shadow {
@@ -176,8 +182,7 @@ height: 483px;
     height: 483px;
     background-repeat: no-repeat;
     transform:scale(1,-1);
-    top: 50px;
-    left: 24px;
+    
     
     
 }
@@ -210,6 +215,8 @@ position:relative;
 width: 240px;
 height: 483x;  
 transform:rotate(90deg);
+right: 202px;
+top: -7px;
 
 
 }
@@ -221,8 +228,7 @@ transform:rotate(90deg);
     width: 240px;
     height: 483px;
     background-repeat: no-repeat;
-    right: 7px;
-    top: 204px;
+
     
     
 
@@ -279,8 +285,8 @@ transform:rotate(90deg);
     grid-row-gap: 40px;
     padding-top: 50px;
     position: relative;
-    left:10px;
-    top:20px;
+    left: 0px;
+    top: -16px;  
 }
 
 
@@ -290,7 +296,9 @@ transform:rotate(90deg);
     grid-template-areas:"i h h h"
                         "i p p p"     
                         "i p p p" 
-                        "i p p p" ;      
+                        "i p p p" ; 
+
+     
 }
 
 
@@ -311,7 +319,11 @@ transform:rotate(90deg);
     font-size: 12px;
     word-wrap: break-word;
     font-weight: 700;
-    letter-spacing: 0.1px;
+    position: relative;
+    left: 6px;
+    top: 7px;
+
+
 }
 
 h2{
@@ -340,8 +352,8 @@ h2{
 .block h3{
     position: relative;
     top: -3px;
+    left: 4px;
     color: #666d89;
-    letter-spacing: -0.5px;
     font-weight: 900;
 }
 
@@ -350,7 +362,7 @@ h4{
     top: -12px;
     letter-spacing: 0.36px;
     line-height: 30px;
-    font-size: 17px;
+    font-size: 18px;
     color: #767e9e;
     font-weight: 400;
 }
