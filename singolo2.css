@@ -8,8 +8,8 @@ body{
 
 
 .wrapper{
-    width: 100%;
     max-width: 1020px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -26,21 +26,41 @@ body{
    background-color:  #F2F2F2;
 }
 .menu-bar {
+
     display:flex;
-    justify-content: space-around;
+    flex-direction: row;
+    position: relative;
+    top: 92px;
+    left: 53px;
+    font-size: 10px;
+
+   
 }
 
 .menu-bar li {
-    border-radius: 1px;
-    display: inline-block;
+    
+    justify-content: left;
+    border: 1px solid #666d89;
+    border-radius: 4px;
+    vertical-align: middle;  
+    padding: 6px;
+    margin: 5px;
+      
 
 }
-.portfolio-tag, p , .menu-bar li {
+
+.menu-bar li:hover {
+
+    border: 1px solid white;
+    border-radius: 4px;
+    color:white;
+}
+.portfolio-tag, p  {
    color:  #666D89;
 }
 
 li {
-    text-decoration: none;
+    list-style-type: none;
 }
 
 .artGrid {
@@ -57,8 +77,6 @@ li {
 
 .art-image{
     background-color:brown;
-
-
   
 }
 
@@ -94,7 +112,35 @@ p {
 
 
 
-.people-about {
+.people_about {
     display:flex;
-   
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+    top:154px;
+
+    
+}
+
+.people{
+    width:305px;
+    height:483px;
+    
+    
+}
+.button{
+    text-align: left;
+    text-decoration: none;
+    border-color:white;
+    border-radius: 10%;
+}
+
+h2{
+    position: relative;
+
+    font-size: 30px;
+    top: 79px;
+    left: 14px;
+
 }
