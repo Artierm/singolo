@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+body{
+    font-family: "Lato" , sans-serif;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.get-a-quote .wrapper {
+    width:100%;
+    height:650;
+    background-color: #f06c64;
+}
+
+
+.form_space {
+    width:620px;
+    height: 375px;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.form {
+    background-color:#D6564F;
+    text-decoration: none;
+
+
+}
+
+.footer .wrapper {
+    width: 100%;
+    height: 77px;
+    background-color: #2d303a;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quote , .quote-text , .contact-info , .contact-info-text {
+    color:white;
+
+}

@@ -75,10 +75,6 @@ li {
   
 }
 
-.art-image{
-    background-color:brown;
-  
-}
 
 p {
     position: relative;
@@ -119,7 +115,7 @@ p {
     align-items: flex-end;
     position: relative;
     top:154px;
-
+    
     
 }
 
