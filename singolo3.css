@@ -14,6 +14,7 @@ body{
     max-width: 1020px;
     width: 100%;
     margin: 0 auto;
+    padding : 40px 0;
 }
 
 .get-a-quote .wrapper {
@@ -29,7 +30,7 @@ body{
     
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    
 
 }
 
@@ -51,5 +52,22 @@ body{
 
 .quote , .quote-text , .contact-info , .contact-info-text {
     color:white;
+
+}
+input {
+    border:none;
+    border-radius: 5px;
+    width: 598px;
+    height: 40px;
+}
+
+#textarea{
+    resize: none;
+    border:none;
+    border-radius: 5px;
+    width: 598px;
+    height: 150px;
+    background-color:#D6564F;
+
 
 }
