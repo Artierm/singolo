@@ -7,6 +7,8 @@ body{
     font-family: "Lato" , sans-serif;
     width: 1020px;
     margin: 0 auto;
+    height: calc(100vh - 1px);
+      
 }
 
 .wrapper{
@@ -58,12 +60,14 @@ li{
     top: 35px;
 }
 
+.slider {
+    background-color: #ea676b;
+}
 .slider .wrapper{
     display: flex;
     justify-content: space-between;
     align-items:center;
     height:594px;
-    /* width: calc(100%-80px); */
     background-image: url(/assets/Bg1X.png);
     flex-direction: row;
     position:relative;  
@@ -519,7 +523,7 @@ left: -10px;
 
 .footer{
     position: relative;
-    top: -2px;
+    top: -3px;
 }
 
 .footer .wrapper {
@@ -704,3 +708,4 @@ input:required:valid textarea:required:valid {
     top:-5px;
 
 }
+
