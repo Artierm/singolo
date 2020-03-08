@@ -709,3 +709,6 @@ input:required:valid textarea:required:valid {
 
 }
 
+.picture:nth-child(n+13) {
+    display: none;
+}
