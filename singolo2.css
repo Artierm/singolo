@@ -9,7 +9,6 @@ body {
     font-family: 'Lato', sans-serif;
     width: 100%;
     max-width: 1020px;
-    color: #666d89;
     margin: 0 auto;
 
 
@@ -29,6 +28,7 @@ body {
     height: 864px;
     background-color: #2d303a;
     border-bottom: #323746 solid 6px;
+    color: #666d89;
 }
 
 .portfolio .wrapper{
@@ -51,7 +51,7 @@ body {
 
 
 
-p{
+.portfolio p{
     position: relative;
     top: 33px;
     font-size: 18px;
@@ -59,7 +59,7 @@ p{
 }
 
 
-.menu-bar {
+.nav-bar {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -70,7 +70,7 @@ p{
 
 
 
-.menu-bar li{
+.nav-bar li{
     margin-right: 10px;
     padding: 6px;
     height: 8px;
@@ -86,7 +86,7 @@ p{
 
 
 
-.menu-bar :hover {
+.nav-bar :hover {
 
     border-color:  white;
     color:white;
@@ -110,6 +110,7 @@ p{
     background-color: #f2f2f2;
     height: 728px;
     border-bottom: #ffffff solid 6px;
+    color: #666d89;
 }
 
 
@@ -126,7 +127,7 @@ p{
 .people_about{
     display: grid;
     grid-gap:20px;
-    grid-template: 470px / repeat(3, 300px);
+    grid-template: 470px / repeat(3, 302px);
     
   
 
@@ -149,7 +150,7 @@ p{
 
 .people {
     display: grid;
-    grid-template: 300px 20px 46px 32px/ 300px;
+    grid-template: 302px 20px 46px 32px/ 302px;
     grid-gap: 15px;
     flex-direction: column;
 }

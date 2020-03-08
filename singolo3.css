@@ -15,10 +15,13 @@ body{
     margin: 0 auto;
     padding : 40px;
 }
+
 .get-a-quote{
     height: 648px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
+    position: relative;
+    top: -3px;
 }
 
 .get-a-quote .wrapper {
@@ -40,10 +43,6 @@ body{
     top: 19px;
 }
 
-.form {
-    background-color:#D6564F;
-    text-decoration: none;
-}
 
 .footer .wrapper {
     width: 100%;
@@ -64,11 +63,11 @@ body{
     font-size: 12px;
 }
 
-.quote , .quote-text , .contact-info  {
+.quote , .quote-text , .contact-info , .submit {
     color: #f0d8d9;
 }
 
-input {
+input  {
     width: 589px;
     height: 37px;
     border:none;
@@ -77,6 +76,18 @@ input {
     font-size: 11px;
     margin-bottom: 16px;
     padding: 0px 15px 1px;
+}
+
+.submit{
+        height: 25px;
+        background-color: #d6564f;
+        border: 3px solid #d6564f;
+        border-radius: 5px;
+        font-size: 15px; 
+        color: #f0d8d9;
+        position: relative;
+        top: 32px;
+
 }
 
 #textarea{
