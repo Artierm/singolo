@@ -825,3 +825,153 @@ position: fixed;
   .scroll{
     scroll-margin-top: 33px;
   }
+
+  @media (max-width: 1019px)
+  {
+    
+    .about-us .wrapper, .footer .wrapper, .wrapper {
+        width: calc(100% - 80px);
+        max-width: calc(100% - 80px);
+        
+    }
+
+    body, .slider, .portfolio, .get-a-quote, .services, .footer, .about-us, .header{
+        width: 100vw;
+        margin: 0;
+   
+    }
+
+    .people_about{
+        grid-gap:1vw;
+        grid-template-columns:   repeat(3, 1fr);
+        grid-template-areas: 
+         "a a a";
+    
+    }
+
+  .portfolio {
+      height: 135vw; 
+ }
+
+.artGrid{
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-row-gap:1vw;
+    grid-column-gap:2vw;
+    grid-template-areas: 
+    "a a a"
+    "a a a"
+    "a a a"
+    "a a a";
+
+}  
+ 
+.grid {
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "a a"
+    "a a"
+    "a a"; 
+}
+
+   
+.artGrid .picture{
+    width: 100%;
+}
+   
+    .informFlex{
+        width: 100%;
+    }
+
+    .form_space{
+        width: 65%;
+        margin-right: 30px;
+    }
+
+    input, #textarea, .submit{
+        width: 100%;
+    }
+
+    aside{
+        width: 35%;
+    }
+  }
+
+
+  @media (max-width: 767px)
+  {
+    .artGrid{
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-row-gap:1vw;
+        grid-column-gap:2vw;
+        grid-template-areas: 
+        "a a "
+        "a a "
+        "a a "
+        "a a "
+        "a a "
+        "a a ";
+       
+    }  
+    
+    .artGrid .picture{
+        width: 100%;
+    }
+      
+        .informFlex{
+            width: 100%;
+        } 
+
+        .portfolio {
+            height: 267vw; 
+       }
+
+       .about-us .wrapper, .footer .wrapper, .wrapper {
+        width: calc(100% - 80px);
+        max-width: calc(100% - 80px);
+        
+    }
+
+    body, .slider, .portfolio, .get-a-quote, .services, .footer, .about-us, .header{
+        width: 100vw;
+        margin: 0;
+      
+    }
+
+    .grid {
+        grid-template-columns: repeat(1 , 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+        "a "
+        "a "
+        "a "
+        "a "
+        "a "
+        "a ";
+    }
+    
+       .services .wrapper {
+           height: 250vw;
+       }
+
+       .buttonArt {
+           font-size: 11px;
+       }
+       
+       .form_space {
+           height: 225px;
+       }
+
+       .people__men{
+           width: 31vw;
+       }
+  }
+
+  @media (max-width: 374px)
+  {
+      header {
+          display:none;
+      }
+  }
