@@ -8,6 +8,7 @@ body{
     width: 1020px;
     margin: 0 auto;
     height: 100%;
+    
       
 }
 
@@ -832,32 +833,35 @@ position: fixed;
     .about-us .wrapper, .footer .wrapper, .wrapper {
         width: calc(100% - 80px);
         max-width: calc(100% - 80px);
-        
+        height: auto;
     }
 
-    body, .slider, .portfolio, .get-a-quote, .services, .footer, .about-us, .header{
+    body, .slider, .portfolio, .get-a-quote, .services, .footer, .about-us {
         width: 100vw;
         margin: 0;
+        height: auto;
    
     }
 
+    .header{
+        width: 100vw;
+        margin: 0;
+
+    }
+
     .people_about{
-        grid-gap:1vw;
+        grid-gap:20px;
         grid-template-columns:   repeat(3, 1fr);
         grid-template-areas: 
          "a a a";
     
     }
 
-  .portfolio {
-      height: 135vw; 
- }
 
 .artGrid{
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(3, 1fr) ;
-    grid-row-gap:1vw;
-    grid-column-gap:2vw;
+    grid-gap: 19.65px;
     grid-template-areas: 
     "a a a"
     "a a a"
@@ -875,7 +879,9 @@ position: fixed;
     "a a"; 
 }
 
-   
+.block{
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+}
 .artGrid .picture{
     width: 100%;
 }
@@ -902,76 +908,177 @@ position: fixed;
   @media (max-width: 767px)
   {
     .artGrid{
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(2, 1fr) ;
-        grid-row-gap:1vw;
-        grid-column-gap:2vw;
+        grid-gap:9.65px;
         grid-template-areas: 
-        "a a "
-        "a a "
         "a a "
         "a a "
         "a a "
         "a a ";
        
+        
     }  
+
     
     .artGrid .picture{
         width: 100%;
     }
       
-        .informFlex{
-            width: 100%;
-        } 
-
-        .portfolio {
-            height: 267vw; 
-       }
-
-       .about-us .wrapper, .footer .wrapper, .wrapper {
-        width: calc(100% - 80px);
-        max-width: calc(100% - 80px);
-        
+       .picture:nth-child(n+9) {
+        display: none;
     }
+   
+   .grid{
+    grid-template-columns: repeat(1 , 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "a "
+    "a "
+    "a "
+    "a "
+    "a "
+    "a "; 
+   }
 
-    body, .slider, .portfolio, .get-a-quote, .services, .footer, .about-us, .header{
-        width: 100vw;
-        margin: 0;
-      
-    }
+   .people_about{
+    grid-gap:20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+     "a"
+     "a"
+     "a";
+    padding-top: 20px;
+}
 
-    .grid {
-        grid-template-columns: repeat(1 , 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-template-areas: 
-        "a "
-        "a "
-        "a "
-        "a "
-        "a "
-        "a ";
-    }
-    
-       .services .wrapper {
-           height: 250vw;
-       }
 
-       .buttonArt {
-           font-size: 11px;
-       }
-       
-       .form_space {
-           height: 225px;
-       }
-
-       .people__men{
-           width: 31vw;
-       }
+   .services {
+       height: auto;
+   }
+     
   }
+
+  .portfolio {
+      padding-bottom: 40px;
+  }
+
+  .footer .wrapper {
+      display: flex;
+      justify-content: center;
+
+  }
+  .copyright{
+      display: none;
+  }
+
+  .informFlex{
+      display: block;
+  }
+
+  .informFlex .aside{
+    width: 100%;
+  }
+  
+   .form_space {
+       width: 100%;
+   }
+
+   aside {
+       width: 100%;
+       margin: 0;
+   }
+   .get-a-quote .wrapper {
+       padding-right: 30px;
+   }
+
+   .contact-info-text , aside .contacts{
+       left:0px
+   }
+
+   .contact-info  {
+       margin-left: 0;
+       padding-top:32px;
+
+   }
+   aside p{
+       margin-left: 0;
+   }
+
+    .about-us__text  {
+       padding-top: 40px;
+   } 
+   .submit {
+       height: 37px;
+       padding-right: 15px;
+       width: 87vw;
+     background: #FBC65F;
+     border-radius: 5px;
+   }
+   .header .wrapper {
+  
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        
+   }
+
+   .header{
+       height: 71px;
+   }
+   .buttonArt{
+       font-size: 11px;
+   }
+
+   nav{
+       display: none;
+   }
+   
+   .singolo {
+       left:0;
+       top:0;
+       
+   }
+
+   .phone_menu {
+       position: relative;
+       top:37px;
+       left:27px;
+       width: 25px;
+       height: 3.4px;
+       background-color:#ffffff;
+       border-radius: 5px;
+   }
+
+   .phone_menu::before {
+       position:absolute;
+       content: "";
+       display: block;
+       width: 25px;
+       height: 3.4px;
+       background-color: #ffffff;
+       top:9.4px;
+       border-radius: 5px;
+
+   }
+
+   .phone_menu::after {
+    position:absolute;
+    content: "";
+    display: block;
+    width: 25px;
+    height: 3.4px;
+    background-color:#ffffff;
+    top:-9.4px;
+    border-radius: 5px;
+
+}
+
 
   @media (max-width: 374px)
   {
-      header {
-          display:none;
-      }
   }
+
+  
+
+
