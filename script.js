@@ -233,7 +233,7 @@ const SingoloDom = () => {
     FirstClick();
     SubmitForm();
     clickModalBtn();
-     scrollMenuHover();
+    //  scrollMenuHover();
     clickMobile();
     clickPhoneMenuHover();
 }
@@ -259,21 +259,20 @@ for (let Href of Hrefs) {
 }
 
 
-window.addEventListener("scroll", onScroll())
+window.addEventListener("scroll", onScroll)
 function onScroll (event){ 
     let curPos =  window.scrollY;
-    let wrappers = document.querySelectorAll('.wrapper');
-    wrappers.forEach((el)=>{
+    document.querySelectorAll('.wrapper').forEach((el)=>{
     if(el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos)
     {
-        document.querySelectorAll('.menu-bar a').forEach(((a)=>{
+        document.querySelectorAll('.menu-bar a').forEach(a=>{
             a.classList.remove('hoverMenuselected')
             if(el.getAttribute('id') === a.getAttribute('href').substring(1))
             a.classList.add('hoverMenuselected')
-        })
+        }
         )
 }
-    })
+    })  
 }
 
 

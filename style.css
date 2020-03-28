@@ -1071,9 +1071,7 @@ position: fixed;
        width: 100%;
        margin: 0;
    }
-   .get-a-quote .wrapper {
-       padding-right: 30px;
-   }
+   
 
    .contact-info-text , aside .contacts{
        left:0px
@@ -1236,7 +1234,7 @@ transition: all 0.2s;
 
 input , #textarea{
     padding-left: 15px;
-    width:calc(100% - 15px) ;
+    width:calc(100% - 30px) ;
 }
 
 .phone-corpus{
@@ -1285,7 +1283,7 @@ position: relative;
     height: 220px;
  }
  .submit {
-     width:  calc(100% + 15px);
+     width:  100%;
  }
 
  .contact {
@@ -1334,7 +1332,16 @@ position: relative;
         
     }
 
+    .buttonArt {
+        font-size: 8px;
     
+    }
+    
+    .nav-bar li {
+        padding: 0;
+    }
+
+
   }
 
   
