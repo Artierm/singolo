@@ -1340,8 +1340,18 @@ position: relative;
     .nav-bar li {
         padding: 0;
     }
+ 
+.singolo {
+    left: 10px;
+    top:-13px;
 
-
+}
+.header {
+    height: 40px;
+}
+.btn{
+    top:7px;git 
+}
   }
 
   
