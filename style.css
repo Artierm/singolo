@@ -730,6 +730,7 @@ position: fixed;
     position: fixed;
     top:30%;
     left:30%;
+    font-size: 20px;
 }
 
 
@@ -803,6 +804,8 @@ position: fixed;
     background-size: auto auto;
     background-repeat: no-repeat;
     background-position:  center;
+    transition-property: background-position;
+    transition-duration: 2s;
 
     
 }
@@ -1344,6 +1347,7 @@ input , #textarea{
  background-image: url(assets/vertical375.svg);
  background-repeat: no-repeat;
  transform: scale(-1,1);
+ transform: rotate(360deg);
  margin: 0;
  width:90px;
 height: 180px;
@@ -1372,7 +1376,8 @@ left:-6px;
  .backgroundImageSecond{
     border-bottom:6px solid #648bf0 !important;
     background-color: #648bf0 ;
-    transition: all 2s;
+    transition-property: background-color;
+    transition-duration: 2s;
     background-image: url(assets/slider-2.svg);
     background-size: 100% 220px;
     background-repeat: no-repeat;
@@ -1439,7 +1444,8 @@ left:-6px;
     .backgroundImageSecond{
         border-bottom:6px solid #648bf0 !important;
         background-color: #648bf0 ;
-        transition: all 2s;
+        transition-property: background-color;
+        transition-duration: 2s;
         background-image: url(assets/slider-2.svg);
         background-size: 100% 200px;
         background-repeat: no-repeat;
