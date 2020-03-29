@@ -24,6 +24,7 @@ const clickPhoneMenuHover = () => {
            document.querySelector('.phone_menu').classList.add('displayNone');
            document.querySelector('.singolo').classList.remove('singolo_left');
            document.querySelector('.phone_menu_button').classList.remove('phone_menu_rotate');
+           
         
     })
 }
@@ -217,12 +218,14 @@ const clickMobile = () => {
             document.querySelector('.phone_menu').classList.add('displayFlex');
             document.querySelector('.phone_menu').classList.remove('displayNone');
             document.querySelector('.singolo').classList.add('singolo_left');
+            
         }
         else {
             document.querySelector('.phone_menu').classList.remove('displayFlex');
             document.querySelector('.phone_menu_button').classList.remove('phone_menu_rotate')
             document.querySelector('.singolo').classList.remove('singolo_left');
             document.querySelector('.phone_menu').classList.add('displayNone');
+           
         }   
 })
 }
