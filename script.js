@@ -14,9 +14,17 @@ const clickPhoneMenuHover = () => {
         if (event.target.classList.contains('button_phone')) {
             document.querySelectorAll('.button_phone').forEach(elem => {
                 elem.classList.remove("hoverMenuselected");
+            
+
             })
-            event.target.classList.add("hoverMenuselected");
         }
+            event.target.classList.add("hoverMenuselected");
+    
+           document.querySelector('.phone_menu').classList.remove('displayFlex');
+           document.querySelector('.phone_menu').classList.add('displayNone');
+           document.querySelector('.singolo').classList.remove('singolo_left');
+           document.querySelector('.phone_menu_button').classList.remove('phone_menu_rotate');
+        
     })
 }
 
@@ -210,15 +218,16 @@ const clickMobile = () => {
             document.querySelector('.phone_menu').classList.remove('displayNone');
             document.querySelector('.singolo').classList.add('singolo_left');
         }
-
         else {
             document.querySelector('.phone_menu').classList.remove('displayFlex');
-            document.querySelector('.phone_menu_button').classList.remove('phone_menu_rotate');
+            document.querySelector('.phone_menu_button').classList.remove('phone_menu_rotate')
             document.querySelector('.singolo').classList.remove('singolo_left');
             document.querySelector('.phone_menu').classList.add('displayNone');
-        }
-    })
+        }   
+})
 }
+
+
 
 const SingoloDom = () => {
     clickMenuHover();
@@ -233,9 +242,10 @@ const SingoloDom = () => {
     FirstClick();
     SubmitForm();
     clickModalBtn();
-    //  scrollMenuHover();
+    //scrollMenuHover();
     clickMobile();
     clickPhoneMenuHover();
+    //blurPhone();
 }
 
 SingoloDom();
@@ -262,18 +272,38 @@ for (let Href of Hrefs) {
 window.addEventListener("scroll", onScroll)
 function onScroll (event){ 
     let curPos =  window.scrollY;
-    document.querySelectorAll('.wrapper').forEach((el)=>{
-    if(el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos)
+   
+    let style = parseInt(window.getComputedStyle(document.querySelector('header')).height);
+
+
+    document.querySelectorAll('.id').forEach((el)=>{
+    if(el.offsetTop <= curPos + style && (el.offsetTop + el.offsetHeight) > curPos)
     {
         document.querySelectorAll('.menu-bar a').forEach(a=>{
-            a.classList.remove('hoverMenuselected')
+            a.classList.remove('hoverMenuselected') 
+            console.log(el.getAttribute('id'))
             if(el.getAttribute('id') === a.getAttribute('href').substring(1))
             a.classList.add('hoverMenuselected')
+        
         }
         )
+
+        
+        document.querySelectorAll('.menu-bar_phone a').forEach(a=>{
+            a.classList.remove('hoverMenuselected') 
+            console.log(el.getAttribute('id'))
+            if(el.getAttribute('id') === a.getAttribute('href').substring(1))
+            a.classList.add('hoverMenuselected')
+        
+        }
+        )
+
 }
     })  
 }
+
+
+
 
 
 
