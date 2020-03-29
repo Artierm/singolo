@@ -751,7 +751,8 @@ position: fixed;
     
 }
 .onPicture {
-    border:5px solid #f06c64;
+    /* border:5px solid #f06c64; */
+    outline: 5px solid #f06c64;
 }
 
 .keyOver{
@@ -813,23 +814,26 @@ position: fixed;
 
 
 .phone-button-vertical{
-  width:35px;
-  height:35px;
-  position: relative;  
-  background-color:rgba(102, 124, 197, 0);
-  top:448px;
-  left:90px;
-  z-index: 1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background-color: rgba(102, 124, 197, 0);
+    top: 449px;
+    left: 89px;
+    z-index: 1;
 }
 
 .phone-button-horizontal{
-    width:35px;
-    height:35px;
-    position: relative;  
-    background-color:rgba(102, 124, 197, 0);
-    top: 471px;
-    left: 90px;
-    z-index: 1;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        background-color: rgba(102, 124, 197, 0);
+        top: 474px;
+        left: 87px;
+        z-index: 1;
+    
   }
 
   .scroll
