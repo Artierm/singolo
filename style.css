@@ -133,9 +133,12 @@ li{
     right: 31px;
     top: -3px;
     position: relative;
+    z-index: 2
+    ;
 }
 
 .key-r{
+    z-index: 2;
     display: flex;
     order:3;
     width:90px;
@@ -1261,6 +1264,7 @@ input {
     justify-content: center;
     align-items: center;
     transition: all 0.2s;
+
 }
 
 .phone_menu_button {
@@ -1303,6 +1307,7 @@ transition: all 0.2s;
     height: 35px;
     left: 20px;
     top: 21px;
+    z-index:5;
 }
 
  li {
